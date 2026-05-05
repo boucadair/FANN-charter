@@ -1,4 +1,4 @@
-#Overview
+# Overview
 
 Many network applications, ranging from AI/ML training/inference to cloud services, require high bandwidth, low delay, low jitter data transfer, and depend on networks to adapt quickly to the presence of faults, degradations, or congestion, so as to maintain service continuity and performance. However, existing traffic management mechanisms often face limitations in responsiveness, coverage, and operational complexity, particularly in high-speed, large-scale, dynamic network environments.
 
@@ -6,7 +6,7 @@ Many network devices are capable of detecting congestion, microbursts and other 
 
 The FAst Network Notification (FANN) Working Group is chartered to specify the protocols, mechanisms, and procedures for event-driven, fast notification of fine-grained network status information by the network nodes that detect the status to network nodes that have been registered by a control or management protocol, or by direct configuration, to take response actions.
 
-#Scope
+# Scope
 
 The network condition data that may be advertised using fast network notifications includes link failures, link congestion, SLA violations, queue build-up, etc. An information model will be defined to structure the network condition data in a standardized way for effective dissemination and actions.
 
@@ -20,32 +20,32 @@ The FANN WG will identify the threat models for fast network notifications, and 
 
 The mechanisms for detecting network conditions and the specific mechanisms for acting in response to fast notifications are out of scope. FANN focuses on the content and delivery of notifications from detecting nodes to action taking nodes.
 
-#Work Items
+# Work Items
 
 The WG will produce documents to address the following points:
 
-• Requirements and Gap Analysis
-    o Provide the definition of "fast network notification".
-    o Consider use cases where fast network notification can significantly improve the effect and efficiency of traffic management mechanisms.
-    o For each use case, describe the requirements on the information needed, the nodes that collect and consume the information, the time scale of the notification, and the actions to be performed. 
-    o Consider the applicability and extensibility of existing IETF protocols as fast network notification mechanisms, and identify the gaps that need to be addressed through protocol extensions or as new protocols.
+* Requirements and Gap Analysis
+     + Provide the definition of "fast network notification".
+     + Consider use cases where fast network notification can significantly improve the effect and efficiency of traffic management mechanisms.
+     + For each use case, describe the requirements on the information needed, the nodes that collect and consume the information, the time scale of the notification, and the actions to be performed.
+     + Consider the applicability and extensibility of existing IETF protocols as fast network notification mechanisms, and identify the gaps that need to be addressed through protocol extensions or as new protocols.
     
- • Define an Information Model for fast network notifications
-    o Develop an Information Model that structures real-time network condition data in a standardized way for effective encoding in dissemination mechanisms and for efficient use by elements that take resultant actions.
-    o Define the requirements of the data needed for functions/actions including, but not limited to, traffic engineering, load balancing, flow control, congestion control, and protection switching.
+* Define an Information Model for fast network notifications
+     + Develop an Information Model that structures real-time network condition data in a standardized way for effective encoding in dissemination mechanisms and for efficient use by elements that take resultant actions.
+     + Define the requirements of the data needed for functions/actions including, but not limited to, traffic engineering, load balancing, flow control, congestion control, and protection switching.
     
- • Develop Fast Network Notification protocols and the related mechanisms
-    o Specify the protocol extensions or new protocols needed for fast network notification. Protocol extensions shall only be made in cooperation with the working group that owns the specific protocol. Different protocols may be needed to meet the requirements in different network scenarios. The WG may decide to develop them in a particular order.
-    o Specify the protocol mechanisms for the discovery and selection of the receivers of the fast notification. 
+* Develop Fast Network Notification protocols and the related mechanisms
+     + Specify the protocol extensions or new protocols needed for fast network notification. Protocol extensions shall only be made in cooperation with the working group that owns the specific protocol. Different protocols may be needed to meet the requirements in different network scenarios. The WG may decide to develop them in a particular order.
+     + Specify the protocol mechanisms for the discovery and selection of the receivers of the fast notification. 
 
 In addition to the expected deliverables, the WG will maintain a use case compilation of sufficient breadth to validate the requirements, gaps, and solutions.
 
-#Collaborations
+# Collaborations
 
 The FANN WG will collaborate with the NMOP working group for the specification of terminology related to network status and with the IVY working group for the identification of network components associated with specific statuses. It will work closely with the TEAS WG to identify the data needed by network nodes that perform traffic engineering actions, and it will collaborate with RTGWG to identify information needed to perform Fast Reroute (FRR) and other protection mechanisms. It will collaborate with the IPPM WG on the technologies and protocols which determine what data can be acquired for the notification. It may also collaborate with the IDR and LSR WGs to understand whether there are optimisations in status information distribution that can benefit BGP and the IGPs. The WG will also coordinate with other WGs for work on extensions to existing protocols if changes are needed for detection or data dissemination.
 
 
-#Milestones
+# Milestones
 
 1. Requirements and Gap Analysis  (2027-01)
 
